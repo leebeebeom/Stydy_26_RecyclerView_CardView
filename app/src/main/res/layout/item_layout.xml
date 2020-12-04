@@ -7,18 +7,22 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
 
+    <!--    클릭효과 달아주기-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/item_text_title"
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:text="Title"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -36,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:background="?android:attr/selectableItemBackground"
             android:text="contents"
             android:textColor="@color/black"
             android:textSize="16sp" />
@@ -54,9 +59,10 @@
                 android:id="@+id/item_btn_share"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:background="@android:color/transparent"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="@color/white"
                 android:text="Share"
+                android:textSize="12dp"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
@@ -64,9 +70,10 @@
                 android:id="@+id/item_btn_learn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:background="@android:color/transparent"
+                android:background="?android:attr/selectableItemBackground"
+                android:backgroundTint="@color/white"
                 android:text="Learn More"
+                android:textSize="12dp"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 

@@ -91,4 +91,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             learn = itemView.findViewById(R.id.item_btn_learn);
         }
     }
+
+    public void removeItem(int position) {
+        mItem.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, mItem.size());
+
+    }
+
+    public void addItem(int position, CardViewModel item) {
+        mItem.add(position, item);
+        notifyItemInserted(position);
+        notifyItemRangeChanged(position, mItem.size());
+    }
 }
